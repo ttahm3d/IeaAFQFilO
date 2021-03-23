@@ -15,6 +15,7 @@ const getCurrencyByType = async ({ queryKey }) => {
   const response = await axios.get(
     `${API.base}${currency}${API.startdate}${API.enddate}`
   );
+  console.log(_key);
   return response.data;
 };
 
